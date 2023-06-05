@@ -1,0 +1,23 @@
+.Form-user{
+
+    margin-left: 100px ;
+    margin-right: 100px;
+    padding: 40px;
+}
+
+.Form-user h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.form-group{
+    margin: 10px;
+}
+.add-btn{
+   
+    width: 98%;
+    margin-left: 9px;
+  
+}
+
