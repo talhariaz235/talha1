@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Car Details</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container{
+        width: 1220px;
+    }
+    .car-image-container {
+      width: 400px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      border: 5px solid #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .car-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .card {
+      position: relative;
+      padding-top: 50px;
+     
+    }
+
+    .card-title {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .card-text {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body text-center">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="card-title">Car Details</h2>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="card-text"><strong>Company Name:</strong> <%= car.companyName %></p>
+              </div>
+              <div class="col-md-12">
+                <p class="card-text"><strong>Car Price:</strong> <%= car.carPrice %></p>
+              </div>
+              <div class="col-md-12">
+                <p class="card-text"><strong>Car Description:</strong> <%= car.carDescription %></p>
+              </div>
+              <div class="col-md-12">
+                <p class="card-text"><strong>Car Model:</strong> <%= car.carModel %></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="car-image-container">
+              <img src="/images/<%=car.carImage%>" alt="Car Image" class="car-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cars Information Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 50px;
+		}
+		.card {
+			flex-basis: 30%;
+			background-color: #fff;
+			padding: 20px;
+			margin-bottom: 20px;
+			box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+			box-sizing: border-box;
+		}
+		.card img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+		.card h2 {
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+		}
+		.card p {
+			font-size: 1rem;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+        #back{
+            font-size: 20px;
+            float: right;
+            margin-bottom: 20px;
+        }
+        
+	</style>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Cars Information</h1>
+		<div class="row">
+			<div class="card">
+				<img src="toyota.jpg" alt="Toyota Car">
+				<h2>Toyota</h2>
+				<p>Toyota is a Japanese automotive manufacturer.</p>
+			</div>
+			<div class="card">
+				<img src="ford.png" alt="Ford Car">
+				<h2>Ford</h2>
+				<p>Ford is an American multinational automaker.</p>
+			</div>
+			<div class="card">
+				<img src="bmw.jpg" alt="BMW Car">
+				<h2>BMW</h2>
+				<p>BMW is a German luxury vehicle manufacturer.</p>
+			</div>
+			<div class="card">
+				<img src="mercedes.jpg" alt="Mercedes Car">
+				<h2>Mercedes-Benz</h2>
+				<p>Mercedes-Benz is a German global automobile marque and a division of Daimler AG.</p>
+			</div>
+			<div class="card">
+				<img src="honda.jpg" alt="Honda Car">
+				<h2>Honda</h2>
+				<p>Honda is a Japanese public multinational conglomerate corporation.</p>
+			</div>
+			<div class="card">
+				<img src="audi.jpg" alt="Audi Car">
+				<h2>Audi</h2>
+				<p>Audi is a German luxury car manufacturer.</p>
+			</div>
+            
+		</div>
+        <a href="index.html" id="back">Back to Home</a>
+	</div>
+</body>
+</html>

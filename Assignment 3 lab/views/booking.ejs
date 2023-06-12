@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Car Booking</title>
+    <link rel="stylesheet" href="/css/Style.css">
+  </head>
+  <body>
+    <header>
+      <h1>New Car Booking</h1>
+    </header>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="car">Car Model:</label>
+        <select id="car" name="car" required>
+          <option value="">Select Car Model</option>
+          <option value="Model 1">Model 1</option>
+          <option value="Model 2">Model 2</option>
+          <option value="Model 3">Model 3</option>
+          <option value="Model 4">Model 4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+      </div>
+      <div class="form-group">
+        <label for="total">Total Price:</label>
+        <input type="text" id="total" name="total" readonly>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <a href="/" class="back">Back to Home</a>
+
+      </div>
+    </form>
+  </body>
+  <script src="/js/action.js"></script>
+</html>

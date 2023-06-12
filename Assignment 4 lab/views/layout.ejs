@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header1">
+        <div class="col1">
+            <img src="/images/Capture.PNG" alt="nothing" id="img">
+        </div>
+        <div class="col2">
+            <ul>
+                <li><a href="/"><img src="/images/icons8-home-50.png" alt="nothing"></a>
+                </li>
+                <li> <a href="booking.ejs"> <img src="/images/icons8-news-50.png" alt="nothing"></a></li>
+                <li> <a href="info.ejs"><img src="/images/icons8-toolbox-50.png" alt="nothing" aria-placeholder="Book Your Car"></a></li>
+                <li> <a href="contact.ejs"><img src="/images/icons8-contacts-50.png" alt="nothing"></a></li>
+            </ul>
+        </div>
+        <div class="col2">
+            <div class="float-right">
+                <a class="btn btn-primary login-btn" href="/addcar.ejs">Add Car</a>
+
+                <% if (user) { %>
+                   
+                      <a class="btn btn-danger" href="/api/auth/logout">Log out</a>
+                  
+                  <% } else { %>
+                   
+                  
+                  
+                      <a class="btn btn-primary mr-2" href="/login.ejs">Log in
+                      </a>
+                  
+                  <% } %>
+              
+              </div>
+        </div>
+    </div>
+    <div class="container " style="margin-top: 100px;">
+        <% if (flash) { %>
+         <div class="alert alert-<%-flash.type%>">
+          <%-flash.message %>
+        </div>
+        <% } %>
+        <%-body  %>
+      </div>
+</body>
+</html>
